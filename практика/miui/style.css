@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Универсальные теги */
+
+    .left, .ul-li > li {
+        float: left;
+        list-style: none;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .ul-li {
+        margin: 0%;
+        padding: 0%;
+        display: inline-block;
+
+    }
+
+    .ul-li li {
+        padding: 10px 15px;
+        
+    }
+
+    .br li {
+        border-right: 1px solid #e6e6e6;
+    }
+
+    .ul-li li:last-child {
+        border: none;
+    } 
+
+    .verhnee-menu .ul-li i {
+        margin-right: 10px;
+        
+    }
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .center-menu .right p:first-child,
+    .nijnee-menu .right p:first-child,.seryi {
+        font-weight: 700;
+        color: #4c4b6b;
+    }
+
+    .center-menu .right p,
+    .nijnee-menu .right p{
+        color: grey;
+    }
+
+    .red {color: rgb(255, 32, 32);}
+    .orange {color: rgb(255, 174, 24);}
+    .blue {color: blue;text-decoration: none;}
+    .m-l-10 {
+        margin-left: 10px;
+    }
+
+    
+
+    .center-menu li {
+        border-right: 1px solid #dbdbdb ;
+    }
+
+    .center-menu li:first-child, .center-menu li:last-child {
+        border: none;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        display: none;
+        position: absolute;
+        background: white;
+        top: 52px;
+        border: 1px solid black;
+        left: 8px;
+    }
+
+    .hover-menu li:hover .dropdown-menu {
+        display: block;
+    }
+
+
+
+/* Конец универсальных тег */
+
+
+
+
+
+
+/* Стили для страниц */
+    .verhnee-menu, .verhnee-menu a {
+        display: inline-block;
+        width: 100%;
+        background: #f7f7f7;
+        color: #66677b;
+    }
+
+    .msg {
+        left: 9px;
+        position: absolute;
+        top: -9px;
+        width: 14px;
+        height: 14px;
+        background: red;
+        text-align: center;
+        font-size: 11px;
+        /* font-weight: 700; */
+        color: white;
+        border-radius: 9px;
+    }
+    
+    .icon-msg {
+        position: relative;
+    }
+
+    /* center menu */
+    .center-menu ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .center-menu .ul-li li:first-child {
+        width: 250px;
+        margin: 0%;
+    }
+
+    .seryi-krug {
+        width: 40px;
+        height: 40px;
+        background: #dbdbdb;
+        text-align: center;
+        display: inline-block;
+        border-radius: 20px;
+        line-height: 2.5;
+        color: #4c4b6b;
+    }
+
+    .center-menu .right {margin-right: 60px;}
+
+
+
+    /* nijnee-menu */
+    .nijnee-menu {
+        display: inline-block;
+        width: 100%;
+        background: #f7f7f7;
+        position: relative;;
+    }
+
+    .nijnee-menu .left .ul-li > li {
+        padding: 10px 25px;
+        margin-top: 10px;
+        border-radius: 20px 20px;
+        transition: .4s ease;
+    }
+
+    .nijnee-menu .left .ul-li > li:hover {background: #7cd0f5;}
+
+    .nijnee-menu .left a {
+        color: #4c4b6b;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: .3s ease;
+    }
+    .nijnee-menu .left a:hover {
+        color:white;
+    }
+
+    .nijnee-menu .active {background:#7cd0f5 ; }
+    .nijnee-menu .active a {color: white;}
+
+    .input-main {
+        width: 280px;
+        font-size: 15px;
+        line-height: 2.5;
+        border-radius: 40px 40px 40px 40px;
+        border: 1px solid rgb(230, 230, 230);
+        padding: 0px 30px ;
+        margin-top: 2px;
+    }
+
+    .search {
+        position: absolute;
+        top: 15px;
+        font-size: 15px;
+        color: #4c4b6b;
+        left: 240px;
+    }
+
+    .btn {position: relative;}
+
+    .jeltyi-krug {
+        width: 45px;
+        height: 45px;
+        background: #fecb32;
+        text-align: center;
+        display: inline-block;
+        border-radius: 25px;
+        line-height: 3;
+        color: white;
+    }
+
+    .nijnee-menu .ul-li .right {
+        margin-top: 3px;
+    }
+
