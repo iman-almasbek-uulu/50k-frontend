@@ -1,0 +1,18 @@
+
+.block {
+    width: 100px;
+    height: 70px;
+    background: #000;
+
+}
+
+
+.block:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid rgb(255, 0, 0);
+    position: absolute;
+}

@@ -1,0 +1,96 @@
+/* Базовые настройки страницы */
+
+    /* * - означает обращение ко всем элементам сайта */
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
+/* Конец базовых настроек страницы */
+
+
+
+/* Универсальные стили */
+
+    /* , -  означает дпольнительное обращение к тому или иному элементу
+            это перечисление подключений новых Class'ов 
+    */
+    .left, .ul_li li {
+        float: left;
+        /* Float - это обтекание. То есть выравнивание */
+    }
+
+    .right {
+        float: right;
+    }
+
+    .ul_li {
+        list-style: none;
+        display: inline-block;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .ul_li li {
+        padding: 10px 15px;
+        
+    }
+
+    .b-r li {
+        border-right: 1px solid #e9e9e9;
+    }
+
+    .b-r li:last-child {
+        border-right: 0;
+    }
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+/*  Конец универсальных стилей*/
+
+
+
+
+
+
+/* Стили для страницы */
+    /* урок 14 */
+
+        .verhnee-menu {
+            background: #f7f7f7;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .ul_li i {
+            margin-right: 10px;
+        }
+
+        /* Position */
+       .msg {
+           position: absolute;
+           /* position: это позициоривание */
+           top: -8px;
+           right: 9px;
+           background: red;
+           color: white;
+           border-radius: 13px;
+           width: 13px;
+           height: 13px;
+           text-align: center;
+           font-size: 10px;
+           line-height: 1.4;
+
+       }
+
+       .icon-msg {
+           position: relative;
+       }
+
+/* Конец стилей для страницы */
