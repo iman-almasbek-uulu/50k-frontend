@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    margin: 0%;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 15px 0 0 15px ;
+}
+
+/* стили для шапки профиля */
+.header {
+    background-image: linear-gradient(rgb(0, 247, 255), rgb(0, 60, 255),rgb(0, 255, 213));
+}
+
+.header-menu {
+    list-style: none;
+}
+
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Стили для основного контента */
+.main {
+    background:rgb(255, 251, 28);
+}
+
+/* стиль первого блока */
+.main-articles {
+    list-style: none;
+    background-image: linear-gradient(rgb(0, 119, 255), rgb(41, 90, 252),rgb(0, 255, 213));
+}
+
+.article-link {
+    color: #fff;
+    text-decoration: none;
+}
+/* стиль второго блока */
+.information-descr {
+    background-image:linear-gradient(rgb(0, 255, 213),rgb(0, 255, 13));
+}
+
+/* Стили для подвала сайта */
+.footer {
+    padding-top: 15px;
+    background-image: linear-gradient(rgb(46, 45, 45),rgb(20, 19, 19), rgb(0, 0, 0));
+}
+
+.footer-title {
+    color: rgb(0, 247, 255);
+}
+
+.footer-menu {
+    list-style: none;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}

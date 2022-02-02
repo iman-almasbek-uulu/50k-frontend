@@ -1,0 +1,45 @@
+.fon-yellow  {
+    background-color: red;
+}
+
+li {
+    font-size: 13px;
+}
+
+.second-class {
+    border: 10px solid black;
+}
+
+/* Перечисление классов которые находятся в одном сегменте */
+.fon-yellow.second-class.sum.help {
+    background: yellow;
+}
+
+/* Данная запись трактуется след образом
+    main-menu   -основной родительский блок
+    sum         -внутренний элемент который находится внутри блока main.menu
+
+    По простому: 
+    CSS должен найти в Html класс sum который находятся внутри main-menu
+*/
+.main-menu .sum {
+    background: pink;
+}
+
+
+.primer div {
+    background: red;
+}
+
+.primer p ,
+#my-id{
+    background: red;
+}
+
+#my-id {
+    background: green;
+}
+
+[data-iman="name"] {
+    background: pink;
+}

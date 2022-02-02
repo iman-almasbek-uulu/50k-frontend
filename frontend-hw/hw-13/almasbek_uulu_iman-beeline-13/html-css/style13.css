@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+}
+
+/* Общий контейнер */
+.container {
+    width: 940px;
+    margin: 0px auto;
+}
+
+/* шапка сайта */
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-top: 32px;
+    margin-bottom: 31px;
+}
+
+/* стиль для навигации 'header' */
+.menu-link {
+    font-weight: 700;
+    line-height: 22px;
+    color: #828282;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.menu-link:hover {
+    color: #070707;
+}
+
+.menu-link.active {
+    font-weight: 700;
+    color: #070707;
+}
+
+hr {
+    width: 940px;
+    border: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    margin: 0 auto;
+}
+
+/* HERO контент сайта Denis Novik */
+.hero {
+    margin-top: 39px;
+    margin-bottom: 104px;
+}
+
+.hero-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.hero-title {
+    width: 123px; 
+    
+}
+
+.title-name {
+    font-size: 47.3392px;
+    line-height: 59px;
+    color: #070707;
+}
+
+.hero-descr {
+    width: 145px;
+    
+    
+}
+
+.descr-person {
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707; 
+}
+
+.hero-trans {
+    height: 20px;
+    width: 70px;
+    padding-bottom: 15px;
+    margin-right: -30px;
+}
+
+.trans-lang {
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    transform: rotate(-90deg);
+    margin-top: -28px;
+    cursor: pointer;
+}
+
+.trans-lang:hover {
+    color: #070707;
+}
+
+.trans-lang .active {
+    color: #070707;
+    font-weight: 700;
+}
+
+.hero-img {
+    width: 940px;
+    height: 387px;
+}
+
+/* Основной контент сайта ABOUT */
+.main-about {
+    /* height: 506px; */
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 107px;
+}
+
+.about-title {
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
+    margin-bottom: 40px;
+}
+
+.about-descr {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.about-descr-item {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 22px
+}
+
+.about-descr-item.active {
+    width: 360px;
+    margin: 0 auto 40px;
+}
+
+.about-descr-item.active1 {
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* навыки пользователя */
+.main-skills {
+    text-align: center;
+    padding-top: 91px;
+    padding-bottom: 110px;
+}
+
+.skills-title {
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 69px;
+}
+
+.skills-descr {
+    line-height: 22px;
+    color: #070707;
+    margin-bottom: 83px;
+}
+
+.skills-service {   
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+
+.service-item+.service-item {
+    margin-left: 90px;
+    height: 206px;
+    /* width: 160px; */
+}
+
+.service-img {
+    width: 89px;
+    margin-bottom: 24px;
+}
+
+.service-title {
+    margin-bottom: 41px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+.service-title.height {
+    height: 34px;
+}
+
+.rating-img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+/* Портфолио */
+.main-portfolio {
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-top: 112px;
+    padding-bottom: 96px;
+}
+
+.portfolio-title {
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
+    margin-bottom: 47px;
+}
+
+.portfolio-img {
+    width: 936.24px;
+    height: 510px;
+    margin-bottom: 44px;
+}
+
+.portfolio-link {
+    
+    margin-bottom: 99px;
+}
+
+.portfolio-links {
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #070707;
+    transition: .5s ease;
+}
+
+.portfolio-links:hover {
+    color: #828282;
+}
+
+/* Footer */ 
+.footer {
+    padding: 114px 0 123px;
+    text-align: center;
+}
+
+.footer-send {
+    margin-bottom: 85px;
+}
+
+.footer-title {
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
+    margin-bottom: 20px;
+}
+
+.footer-descr {
+    line-height: 22px;
+    color: #070707;
+    margin-bottom: 29px;
+}
+
+.footer-btn {
+    width: 180px;
+    margin: 0 auto;
+    padding: 13px 30px 12px 28px;
+    background-color: #070707;
+    border-radius: 30px 30px;
+    transition: .7s ease;
+}
+
+.footer-btn:hover {
+    background-color: rgb(0, 255, 221);
+   
+}
+
+.send-button {
+    line-height: 22px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+     transition: 1s ease;
+}
+
+.send-button:hover {
+    color: #000;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 45px;
+} 
+
+.footer-item+.footer-item {
+    margin-left: 61px;
+}
+
+.footer-img {
+    width: 40px;
+}
+
+.footer-link {
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    text-decoration: none;
+    transition: .4s ease;
+}
+
+.footer-link:hover {
+    color: #070707;
+}

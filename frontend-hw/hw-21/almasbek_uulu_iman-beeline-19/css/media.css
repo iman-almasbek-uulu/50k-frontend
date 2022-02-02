@@ -1,0 +1,334 @@
+/* Мобилная адаптация */
+
+    /* 19 урок */
+
+ 
+     @media (max-width:1024px) {
+        .container {
+            width: auto;
+        }
+
+        .verhnee-menu, .center-menu p {
+            font-size: 13px;
+        }
+
+        .center-menu {
+            padding: 10px 0;
+        }
+
+        .center-menu ul li {
+            display: flex;
+            align-items: center;
+        }
+
+        .seryi-krug {
+            margin-top: 5px;
+        }
+
+        .ul li {
+            padding: 10px 10px;
+        }
+
+        .list-product {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .nijnee-menu .left li {
+            padding: 10px 20px;
+        }
+        .nijnee-menu .left a {
+            font-size: 14px;
+        }
+        .input-main {
+            width: 220px;
+            padding: 8px 10px;
+            font-size: 13px;
+        }
+
+        .search i {
+            top: 4px;
+        }
+        .jeltyi-krug {
+            width: 35px;
+            height: 35px;
+            line-height: 2.2;
+            font-size: 15px;
+            margin-top: 12px;
+        }
+        .store a {
+            font-size: 12px;
+        }
+        .store a:first-child {
+            font-size: 15px;
+            margin-bottom: -5px;
+        }
+
+        
+    }
+
+    @media (max-width:823px) {
+        /* Универсальные теги /*
+        .ul li {
+            padding: 1px 9px;
+        }
+        /* Конец универсальные теги */
+        .container {
+            width: auto;
+            
+        }
+        .center-menu .left,.nijnee-menu .left ul {
+            display: none;
+        }
+        .nijnee-menu .right, .nijnee-menu .left {
+            margin: 0%;
+        }
+        .input-main {
+            width: 270px;
+        }
+        .jeltyi-krug {
+            margin-top: 7px;
+        }
+        .reviews {
+            line-height: 2.1;
+        }
+        footer div > img {
+            margin: 0%;
+        }
+        .foot-ttl {
+            font-size: 17px;
+        }
+        footer p,footer a, footer span {
+            font-size: 13px;
+        }
+        .btn-call-me {
+            margin-bottom: 18px;
+            margin-top: 20px;
+        }
+        .btn-call-me a {
+            font-size: 13px;
+            padding: 7px 20px;
+        }
+        footer i {
+            display: none;
+        }
+        .me-2 {
+            display: none;
+        }
+        
+    } 
+
+    @media (max-width:736px) {
+        .container {
+            width: auto;
+        }
+        .ul_li li {
+            padding: 0%;
+        }
+        .verhnee-menu .left,
+        .center-menu li:nth-child(3n),
+        .center-menu li:nth-child(4n) {
+            display: none;
+        }
+        .verhnee-menu ul li {
+            padding: 10px 20px;
+            border: none;
+        }
+        .verhnee-menu ul li:last-child {
+            padding-right: 0px;
+        }
+        .center-menu{
+            padding: 5px 0 15px;
+        }
+        .center-menu ul {
+            align-items: flex-end;
+        }
+        .center-menu .left {
+            display: inline-block;
+        }
+
+        .nijnee-menu div > .right {
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+            
+        }
+        .nijnee-menu ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn {
+            padding: 0%;
+            margin: 3px 0 0;
+        }
+        .verh > div:nth-child(1n), 
+        .verh > div:nth-child(2n) {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+        }
+        footer .row > div {
+            margin-top: 10px;
+        }
+
+        .verh img {
+            width: 60px;
+            margin: 0px;
+        }
+        .verh div:first-child img {
+            width: 90px;
+            margin: 0px;
+        }
+        .verh div:nth-child(4n) ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .nij {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+        }
+        .nij > div {
+            width: 100%;
+        }
+        .nij li {
+            width: 42px;
+        }
+        .nij li:last-child {
+            margin-right: -27px;
+        }
+        .nij li img{
+            width: 40px;
+        }
+        .btn-call-me {
+            width: 220%;
+        }
+    }
+
+    @media (max-width:425px) {
+        .verhnee-menu ul {
+            display: flex;
+            float: none;
+        }
+        .verhnee-menu ul li {
+            padding: 5px 20px 10px;
+            border: none;
+        }
+        .verhnee-menu .right ul {
+            padding-right: 39px;
+            font-size: 11px;
+        }
+        .center-menu img {
+            width: 120px;
+        }
+        .center-menu .left,
+        .nijnee-menu .left,
+        .nij div:last-child{
+            display: none;
+        }
+        .input-main {
+            width: 190px;
+            font-size: 13px;
+        }
+        .search i {
+            font-size: 13px;
+            line-height: 1.7;
+        }
+        .store a:first-child {
+            font-size: 12px;
+        }
+        .store a {
+            font-size: 11px;
+        }
+        .block-body {
+            margin-top: -10px;
+        }
+        .block-title {
+            padding: 0%;
+        }
+        .block-title h2 {
+            font-size: 25px;
+        }
+        .block-title a {
+            font-size: 11px;
+        }
+        .product {
+            font-size: 14px;
+        }
+        .list-product .product {
+            width: 140px;
+            min-height: 140px;
+        }
+        .product img {
+            width: 140px;
+            
+        }
+        .tooltip {
+            padding: 0 2px;
+            margin-top: 28px;
+        }
+        .tooltip::before {
+            top: 20px;
+            left: 5px;
+        }
+        .tooltip span {
+            font-size: 14px;
+        }
+        .title {
+            font-size: 14px;
+            margin-bottom: -4px;
+        }
+        
+        .desc p {
+            font-size: 11px;
+        }
+        .block-star {
+            margin-bottom: -10px;
+        }
+        .stars > i {
+            font-size: 8px;
+
+        }
+        .reviews {
+            line-height: 2.6;
+            font-size: 10px;
+        }
+        .price del {
+            font-size: 11px;
+        }
+
+        .price span {
+            font-size: 14px;
+        }
+        .verh div:first-child img {
+            margin-top: -4px;
+        }
+        .verh div:first-child p {
+            margin-top: -10px;
+        }
+        .nij {
+            padding: 15px 0;
+            text-align: center;
+        }
+        .mt-5 {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        .foot-ttl {
+            margin-bottom: -30px;
+        }
+        .foot-ttl::before {
+            display: none;
+        }
+        .verh div  p {
+            margin: -10%;
+            padding: 0%;
+        }
+        footer p, footer a, footer span {
+            font-size: 11px;
+        }
+    }
+    /* Конец 19 урок */
+
+/* Конец адатации */

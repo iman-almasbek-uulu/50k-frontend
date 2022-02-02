@@ -1,0 +1,35 @@
+/* для первого родительского блока */
+.block {
+    background: rgb(255, 102, 0);    
+}
+
+/* Второй родительский блок */
+#block {
+    background: rgb(255, 0, 200);
+}
+
+/* для дочерних блок */
+.block-item {
+    height: 50px;
+    width: 50px;
+    background: #000;
+}
+
+.block-item.active {
+    border-radius: 50%;
+    border:5px solid red
+}
+
+[data-iman="color"] {
+    background-color: skyblue;
+}
+
+.item1 {
+    color: green;
+    font-size: 23px;
+}
+
+.item3 {
+    color: red;
+    font-size: 23px;
+}
