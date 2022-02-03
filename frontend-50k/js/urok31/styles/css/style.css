@@ -1,0 +1,533 @@
+/* Базовые настройки страницы */
+
+    /* * - означает обращение ко всем элементам сайта */
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    body, p {
+        margin: 0;
+        padding: 0%;
+    }
+
+/* Конец базовых настроек страницы */
+
+
+
+/* Универсальные стили */
+
+    /* , -  означает дпольнительное обращение к тому или иному элементу
+            это перечисление подключений новых Class'ов 
+    */
+    .left, .ul_li > li {
+        float: left;
+        /* > - Это стрелочка означает что обращение будет происходить только для родительских элементов*/
+        /* Float - это обтекание. То есть выравнивание */
+    }
+
+    .right {
+        float: right;
+    }
+
+    .ul_li, ul {
+        list-style: none;
+        display: inline-block;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .ul_li li {
+        padding: 10px 15px;  
+    }
+
+    .b-r li {
+        border-right: 1px solid #e9e9e9;
+    }
+
+    .b-r li:last-child {
+        border-right: 0;
+    }
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .m-r-20 {
+        margin-right: 10px;
+    }
+
+    .red {color: red;}
+    .orange {color: orange;}
+    .blue {color: blue;}
+    
+    .center-menu .right > p:first-child {
+        font-weight: 700;
+        color: #4c4b6c;
+    }
+
+    .center-menu .right p {
+        color: #ababab;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        border: 1px solid black;
+        background: white;
+        top: 47px;
+        left: 0;
+    }
+
+    .hover-menu li:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dnone {
+        display: none;
+    }
+
+    .bg-red{
+        background: rgb(252, 27, 27);
+    }
+
+    .bg-orange {
+        background-color: rgb(223, 108, 0);
+    }
+
+    .a-pad {padding: 0 15px;}
+    
+/*  Конец универсальных стилей*/
+
+
+
+
+
+
+/* Стили для страницы */
+    /* урок 14 */
+
+        .verhnee-menu {
+            background: #f7f7f7;
+            display: inline-block;
+            width: 100%;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .verhnee-menu .ul_li i {
+            margin-right: 10px;
+        }
+
+        .verhnee-menu .right {margin-top: 0px;}
+
+        /* Position */
+       .msg {
+           position: absolute;
+           top: -8px;
+           right: 9px;
+           background: red;
+           color: white;
+           border-radius: 13px;
+           width: 13px;
+           height: 13px;
+           text-align: center;
+           font-size: 10px;
+           line-height: 1.3;
+       }
+
+       .icon-msg {
+           position: relative;
+       }
+
+
+
+
+       /* center menu */
+       .center-menu {
+           padding: 20px 0
+           ;
+       }
+
+       .center-menu ul {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           
+       }
+
+       .center-menu p {padding: 0%;margin: 0%;}
+
+       .seryi-krug {
+           width: 40px;
+           background: #eeeded;
+           height: 40px;
+           display: inline-block;
+           text-align: center;
+           line-height: 2.5;
+           margin-top: 0px;
+           border-radius: 20px;
+           color: #4c4b6c;
+       }
+
+       /* nijnee menu */
+       .nijnee-menu {
+           display: inline-block;
+           width: 100%;
+           position: relative;
+           background: #f7f7f7;
+       }
+
+
+       .nijnee-menu .left, .right {margin: -5px 0 -10px;} 
+
+       .nijnee-menu .left  li {
+           padding: 10px 30px;
+           border-radius: 30px 30px;
+           transition: .4s ease; 
+           margin-top: 15px;
+        }
+
+       .nijnee-menu .left a {
+           color: #4c4b6c;
+           font-size: 17px;
+           font-weight: 700;
+           text-decoration: none;
+           transition: .3s ease;
+       }
+
+       .nijnee-menu .left li:hover {background: #4c4b6c;}
+       .nijnee-menu .left a:hover {color: white; }
+       .active {background: #4c4b6c;}
+       .left .active a{color: white;}
+
+       .input-main {
+           width: 300px;
+           padding: 10px 30px;
+           font-size: 15px;
+           border-radius: 30px 30px;
+           border: 1px solid #f7f7f7;
+           position: relative;
+       }
+
+       .search {position: relative;}
+
+       .search i{
+           font-size: 15px;
+           color: #202020;
+           position: absolute;
+           top: 6px;
+           left: -34px;
+       }
+       
+       .jeltyi-krug {
+            width: 45px;
+            height: 45px;
+            background: #fecb32;
+            text-align: center;
+            display: inline-block;
+            border-radius: 25px;
+            line-height: 3;
+            color: white;
+            margin-top: 12px;
+       }
+
+       .store {margin-top: 3px;}
+       .store a:first-child{
+           
+           font-size: 17px;
+           color: #4c4b6c;
+           font-weight: 700;
+        }
+        .black {color: #4c4b6c;font-weight: bold;}
+        .store a { color:gray ; font-size: 15px;}
+
+
+
+
+
+
+        /* main - стили для основного котента сайта */
+            /* Featured */
+            #featured {
+                padding: 0 15px;
+            }
+
+            .block-title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #ebebeb;
+                padding: 25px 0 20px;
+            }
+
+            .block-title h2 {
+                color: #4c4b6c;
+                font-size: 35px;
+            }
+
+            .block-title a {
+                color: #4c4b6c;
+                text-decoration: none;
+            }
+            
+            .block-body {
+                margin-top: 20px;
+            }
+
+            .list-product {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .block-star { display: inline-block; }
+            .block-star > div { float: left; }
+
+            /* PRODUCT */
+            .product {
+                display: inline-block;
+                min-height: 310px;
+            }
+
+            .product img {
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
+                overflow: hidden;
+            }
+
+            .block-product {
+                margin-top: 10px;
+                width: 200px;
+            }
+
+            .title {
+                color: #4c4b6c;
+                font-size: 17px;
+                margin-bottom: 5px;
+            }
+
+            .stars > i:first-child {margin-left: 0px;}
+
+            .stars > i {
+                color: #fecb32;
+                font-size: 13px;
+                margin-left: -4px;
+            }
+
+            .reviews {
+                margin-left: 5px;
+                font-size: 13px;
+                line-height: 1.7;
+            }
+
+            .price {
+                display: inline-block;
+                width: 100%;
+                margin-top: -20px;
+            }
+
+            .price span {
+                color: #4c4b6c;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .price del {
+                color: gray;
+                font-size: 15px;
+                margin-left: 9px;
+            }
+
+            .btns li {
+                padding: 0%;
+                
+            }
+
+            .btns .ul_li {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .btns li span {
+                transition: .4s ease;
+            }
+
+            .btns li span:hover {
+                background-color: #4c4b6c;
+                color: white;
+            } 
+
+            .product:hover .dnone {
+                display: block;
+            }
+
+            .product:hover .block-star {display: none;}
+
+            .img {
+                position: relative;
+                transition: .4s ease;
+                
+            }
+            .product:hover .img {
+                box-shadow: 10px 10px #d8a1cf;
+                margin-top: -5px;
+                margin-left: -10px;
+                
+            }
+            .desc {
+                width: 75%;
+                text-align: center;
+            }
+            .descr-img {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                background: #ffffffcf;
+                border: 1px solid #dfdfdf;
+                
+                opacity: 0;
+                transition: .4s ease;
+            }
+            .product:hover .descr-img {opacity: 1;} 
+
+            .tooltip {
+                position: absolute;
+                top: 5px;
+                right: -10px;
+                background: #aacc01;
+                padding: 3px 6px;
+                color: #fff;
+                border-radius: 6px;
+                z-index:5;
+                opacity: 1;
+            }
+
+            .tooltip::before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 0px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 9px solid #aacc01;
+                position: absolute;
+                top: 24px;
+            }
+
+            .desc .title {
+                font-size: 20px;
+                font-weight: 700;
+                color: #4c4b6c;
+            } 
+
+            .desc p {
+                color: #6d6d6d;
+            }
+            .desc .orange {
+                text-decoration: underline;
+            }
+
+            #block-banner img {
+                width: 100%;
+            }
+
+            .btn-call-me {
+                text-align: center;
+                margin-top: 50px;
+            }
+
+
+            .verh {
+                border-bottom: 1px solid rgb(230, 230, 230);
+                padding: 10px 0 30px;
+            }
+            
+            .btn-call-me a {
+                color: white;
+                background: #7cd0f5;
+                padding: 10px 50px;
+                text-decoration: none;
+                border-radius: 20px;
+                font-size: 17px;
+                font-weight: 700;
+                transition: .3s ease;
+            }
+
+            .btn-call-me a:hover {
+                background: #0177aa;
+                color: rgb(179, 179, 179);
+            }
+
+            footer a {
+                color: #6d6d6d;
+                font-size: 15px;
+                text-decoration: none;
+            }
+            footer a:hover {
+                color: #000;
+                transition: .4s ease;
+            }
+
+            footer .row ul span {
+                color: #6d6d6d;
+            }
+
+            .hover-link li a {
+                transition: .4s ease;
+            }
+            .hover-link li a:hover {
+                color: black;
+                margin-left: 5px;
+            }
+
+            footer .row > div {
+                margin-top: 27px;
+            }
+            
+            footer .row > div:first-child {
+                margin-top: 0;
+            }
+
+            .foot-ttl {
+                color: #4c4b6c;
+                font-size: 23px;
+                font-weight: 700;
+                position: relative;
+            }
+
+            .foot-ttl::before {
+                content: "";
+                width: 50px;
+                height: 5px;
+                background: rgb(238 237 237);
+                top: 45px;
+                position: absolute;
+            }
+
+            footer div img {
+                padding: 0px;
+                margin: -2px -14px;
+            }
+
+            .nij {
+                padding: 35px 0;
+            }
+
+            .nij ul {
+                margin: -40px 0;
+                padding: 0%;
+            }
+
+
+        /* main - конец стилей для основного сайта */
+
+/* Конец стилей для страницы */
